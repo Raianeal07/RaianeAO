@@ -1,14 +1,52 @@
-✅ Checklist de Acessibilidade
-	•	HTML semântico: uso de <header>, <nav>, <main>, <section>, <footer> e títulos em ordem (<h1> até <h6>).
-	•	Texto alternativo em imagens: todas as imagens importantes têm atributo alt.
-	•	Contraste adequado: cores de fundo e texto com contraste que facilite a leitura.
-	•	Navegação por teclado: todos os elementos interativos podem ser acessados pelo teclado, com foco visível.
-	•	Link “Pular para conteúdo”: atalho no início da página para ir direto ao conteúdo principal.
-	•	Formulários acessíveis: rótulos (<label>) ligados a cada campo e mensagens claras de erro/obrigatoriedade.
-	•	Idioma definido: a página tem atributo lang="pt-BR".
-	•	Não depender só de cores: informações não são passadas apenas por cor.
-	•	Fonte e espaçamento adequados: texto legível em diferentes dispositivos.
-	•	Testes básicos de acessibilidade: navegação feita com teclado e, se possível, com leitor de tela.
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Site Acessível – Exercício</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="pular-link" href="#conteudo">Pular para o conteúdo</a>
 
- AUTORA:
- PROJETO DESENVOLVIDO POR RAIANE NO CURSO DA ALURA START.
+  <header>
+    <h1>Exemplo de Página Acessível</h1>
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section id="sobre">
+      <h2>Sobre</h2>
+      <img src="logo.png" alt="Logotipo do site: círculo verde com letras aA">
+      <p>Este é um exemplo de página feita com boas práticas de acessibilidade.</p>
+
+      <form aria-labelledby="titulo-formulario">
+        <h3 id="titulo-formulario">Fale com a gente</h3>
+        <div>
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" type="text" required>
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p><a href="mailto:contato@exemplo.com">contato@exemplo.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 – Acessibilidade na Web</p>
+  </footer>
+</body>
+</html>
