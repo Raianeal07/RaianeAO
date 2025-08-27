@@ -43,8 +43,17 @@
       <h2>Contato</h2>
       <p><a href="mailto:contato@exemplo.com">contato@exemplo.com</a></p>
     </section>
-  </main>
-
+  </main><
+!DOCTYPE html>
+<html>
+<head>
+    <title>Minha Página</title>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Eu consegui criar minha primeira página!</p>
+</body>
+</html>
   <footer>
     <p>© 2025 – Acessibilidade na Web</p>
   </footer>
