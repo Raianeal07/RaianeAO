@@ -1,0 +1,17 @@
+html { font-size: 100%; }
+body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; }
+header, main, footer { padding: 1rem; max-width: 940px; margin: auto; }
+nav ul { list-style: none; padding: 0; display: flex; gap: 1rem; }
+a { text-decoration: none; }
+a:focus, button:focus, input:focus { outline: 3px solid; outline-offset: 2px; }
+
+body { background: #ffffff; color: #111111; }
+button { padding: .6rem 1rem; border: 2px solid #111; background: #fff; cursor: pointer; }
+label { display: inline-block; margin-top: .5rem; }
+
+.pular-link {
+  position: absolute; left: -999px; top: -999px;
+}
+.pular-link:focus {
+  left: 1rem; top: 1rem; padding: .5rem; background: #fff; border: 2px solid #111;
+}
